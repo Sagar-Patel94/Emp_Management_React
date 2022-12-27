@@ -1,15 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
     <nav
-      className="navbar navbar-expand-lg"
+      className="navbar navbar-expand-lg fixed-top"
       style={{ backgroundColor: "#1F2A40" }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <strong>
             <h4 style={{ color: "lightblue" }}>YP</h4>
           </strong>
@@ -27,21 +27,21 @@ export default function Navbar(props) {
         </button>
         <div id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+            <li className="nav-item navStyle ">
               <Link
                 className="nav-link"
                 aria-current="page"
-                to="/"
+                to="/register"
                 style={{ color: "lightgreen" }}
               >
                 Register
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item navStyle ">
               <Link
                 className="nav-link"
                 aria-current="page"
-                to="/"
+                to="/signIn"
                 style={{ color: "lightgreen" }}
               >
                 Sign In
@@ -49,19 +49,19 @@ export default function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link
-                className="nav-link"
+                className="nav-link navStyle "
                 aria-current="page"
-                to="/"
+                to="/about"
                 style={{ color: "lightgreen" }}
               >
                 About
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item navStyle ">
               <Link
                 className="nav-link"
                 aria-current="page"
-                to="/"
+                to="/contactUs"
                 style={{ color: "lightgreen" }}
               >
                 Contact Us
